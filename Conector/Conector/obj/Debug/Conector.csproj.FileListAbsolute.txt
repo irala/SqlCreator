@@ -1,0 +1,7 @@
+c:\users\nuria\documents\visual studio 2015\Projects\Conector\Conector\bin\Debug\Conector.exe.config
+c:\users\nuria\documents\visual studio 2015\Projects\Conector\Conector\bin\Debug\Conector.exe
+c:\users\nuria\documents\visual studio 2015\Projects\Conector\Conector\bin\Debug\Conector.pdb
+c:\users\nuria\documents\visual studio 2015\Projects\Conector\Conector\obj\Debug\Conector.csprojResolveAssemblyReference.cache
+c:\users\nuria\documents\visual studio 2015\Projects\Conector\Conector\obj\Debug\Conector.exe
+c:\users\nuria\documents\visual studio 2015\Projects\Conector\Conector\obj\Debug\Conector.pdb
+c:\users\nuria\documents\visual studio 2015\Projects\Conector\Conector\bin\Debug\prueba.sql
