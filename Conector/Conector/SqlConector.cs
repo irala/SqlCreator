@@ -18,7 +18,11 @@ namespace Conector
         {
 
         }
-
+        /// <summary>
+        /// Metodo que lee el archivo que le pasamos por parametro y ejecuta la consulta
+        /// </summary>
+        /// <param name="con"></param>
+        /// <param name="archivo"></param>
         public void EjecutarSql(SqlConnection con, string archivo)
         {
             try

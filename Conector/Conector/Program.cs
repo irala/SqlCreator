@@ -11,9 +11,23 @@ namespace Conector
     {
         static void Main(string[] args)
         {
-            Conectar();
+          
+           
+           Console.ReadKey();
+             Conectar();
         }
 
+        private static double returnDouble(double par1, double par2)
+        {
+            double res = par1 / par2;
+
+            return Double.IsPositiveInfinity(res) ? 0.0 : res;
+        }
+
+      
+        /// <summary>
+        /// Metodo que se conecta a la base de datos y que ejecuta el fichero donde guardamos la consulta.
+        /// </summary>
         private static void Conectar()
         {
             try
@@ -22,16 +36,22 @@ namespace Conector
                 conexion.Open();
                 Console.WriteLine("Se abrió la conexión con el servidor SQL Server y se seleccionó la base de datos");
                 SqlConector conector = new SqlConector();
-                conector.EjecutarSql(conexion, "prueba.sql");
+                conector.EjecutarSql(conexion, "Vista.sql");
 
 
                 conexion.Close();
                 Console.WriteLine("Se cerró la conexión.");
+                Console.ReadKey();
+            }
+            catch (ClaseExcepciones e)
+            {
+                throw e;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+           
 
         }
     }

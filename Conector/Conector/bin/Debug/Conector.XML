@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Conector</name>
+    </assembly>
+    <members>
+        <member name="M:Conector.Program.Conectar">
+            <summary>
+            Metodo que se conecta a la base de datos y que ejecuta el fichero donde guardamos la consulta.
+            </summary>
+        </member>
+        <member name="M:Conector.SqlConector.#ctor">
+            <summary>
+            constructor
+            </summary>
+        </member>
+        <member name="M:Conector.SqlConector.EjecutarSql(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+            Metodo que lee el archivo que le pasamos por parametro y ejecuta la consulta
+            </summary>
+            <param name="con"></param>
+            <param name="archivo"></param>
+        </member>
+    </members>
+</doc>
