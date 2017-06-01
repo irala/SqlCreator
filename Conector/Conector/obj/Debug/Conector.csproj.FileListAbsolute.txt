@@ -5,3 +5,12 @@ c:\users\nuria\documents\visual studio 2015\Projects\Conector\Conector\obj\Debug
 c:\users\nuria\documents\visual studio 2015\Projects\Conector\Conector\obj\Debug\Conector.exe
 c:\users\nuria\documents\visual studio 2015\Projects\Conector\Conector\obj\Debug\Conector.pdb
 c:\users\nuria\documents\visual studio 2015\Projects\Conector\Conector\bin\Debug\prueba.sql
+C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\bin\Debug\Conector.exe.config
+C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\obj\Debug\Conector.exe
+C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\obj\Debug\Conector.pdb
+C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\bin\Debug\Conector.exe
+C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\bin\Debug\Conector.pdb
+C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\obj\Debug\Conector.csprojResolveAssemblyReference.cache
+C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\bin\Debug\Conector.XML
+C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\bin\Debug\Copy.sql
+C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\bin\Debug\Create.sql
