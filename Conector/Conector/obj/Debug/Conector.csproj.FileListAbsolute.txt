@@ -14,4 +14,7 @@ C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\obj\Debug
 C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\bin\Debug\Conector.XML
 C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\bin\Debug\Copy.sql
 C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\bin\Debug\Create.sql
+<<<<<<< HEAD
 C:\Users\nuria\Desktop\proyectos\Conector\SqlCreator\Conector\Conector\bin\Debug\Vista.sql
+=======
+>>>>>>> master

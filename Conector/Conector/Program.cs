@@ -16,6 +16,7 @@ namespace Conector
            Console.ReadKey();
              Conectar();
         }
+<<<<<<< HEAD
 
         private static double returnDouble(double par1, double par2)
         {
@@ -25,6 +26,8 @@ namespace Conector
         }
 
       
+=======
+>>>>>>> master
         /// <summary>
         /// Metodo que se conecta a la base de datos y que ejecuta el fichero donde guardamos la consulta.
         /// </summary>
@@ -36,7 +39,11 @@ namespace Conector
                 conexion.Open();
                 Console.WriteLine("Se abrió la conexión con el servidor SQL Server y se seleccionó la base de datos");
                 SqlConector conector = new SqlConector();
+<<<<<<< HEAD
                 conector.EjecutarSql(conexion, "Vista.sql");
+=======
+                conector.EjecutarSql(conexion, "Copy.sql");
+>>>>>>> master
 
 
                 conexion.Close();
