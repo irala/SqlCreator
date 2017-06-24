@@ -11,23 +11,11 @@ namespace Conector
     {
         static void Main(string[] args)
         {
-          
-           
-           Console.ReadKey();
-             Conectar();
-        }
-<<<<<<< HEAD
-
-        private static double returnDouble(double par1, double par2)
-        {
-            double res = par1 / par2;
-
-            return Double.IsPositiveInfinity(res) ? 0.0 : res;
+            Conectar();
         }
 
-      
-=======
->>>>>>> master
+
+
         /// <summary>
         /// Metodo que se conecta a la base de datos y que ejecuta el fichero donde guardamos la consulta.
         /// </summary>
@@ -39,12 +27,90 @@ namespace Conector
                 conexion.Open();
                 Console.WriteLine("Se abrió la conexión con el servidor SQL Server y se seleccionó la base de datos");
                 SqlConector conector = new SqlConector();
-<<<<<<< HEAD
-                conector.EjecutarSql(conexion, "Vista.sql");
-=======
-                conector.EjecutarSql(conexion, "Copy.sql");
->>>>>>> master
+                var respuesta2 = "Y";
+                while (respuesta2 == "Y")
+                {
+                    Console.WriteLine("Que desea hacer?");
+                    Console.WriteLine("1.Crear Tabla  2.Copiar Tabla Existente  3.Borrar Tabla  4.Insertar en Tabla  5.Modificar datos Tabla");
+                    var respuesta = Console.ReadLine();
 
+                    var fichero = "";
+                    switch (respuesta)
+                    {
+                        case "1":
+                            Create c = new Create();
+                            Console.WriteLine("Escriba el nombre de la tabla");
+                            c.NombreTabla = Console.ReadLine().Trim();
+                            Console.WriteLine("Cuantas columnas quieres que tenga");
+                            string num = Console.ReadLine();
+                            int i = 0;
+                            c.ListaValores = new List<string>();
+                            while (i < Convert.ToInt32(num))
+                            {
+
+                                Console.WriteLine("Escribe el nombre de la columna");
+                                c.Valores = Console.ReadLine().Trim();
+                                Console.WriteLine("Tipo de valor : a.nvarchar b.int c.char d.datetime e.time f.boolean");
+                                var tipo = Console.ReadLine();
+                                Console.WriteLine("Longitud del campo");
+                                c.Longitud = Console.ReadLine();
+                                switch (tipo)
+                                {
+                                    case "a":
+                                        c.Tipo = "nvarchar";
+                                        break;
+                                    case "b":
+                                        c.Tipo = "int";
+                                        break;
+                                    case "c":
+                                        c.Tipo = "char";
+                                        break;
+                                    case "d":
+                                        c.Tipo = "Datetime";
+                                        break;
+                                    case "e":
+                                        c.Tipo = "Time";
+                                        break;
+                                    case "f":
+                                        c.Tipo = "boolean";
+                                        break;
+
+                                }
+                                var _valorEntero = c.Valores + " " + c.Tipo + "(" + c.Longitud + ")";
+                                c.ListaValores.Add(_valorEntero);
+                                i++;
+                            }
+
+                            var correcto = new Creates().CreateTable(c.NombreTabla, c.ListaValores);
+
+                            // fichero = "Create.sql";
+                            break;
+                        case "2":
+                            fichero = "Copy.sql";
+                            break;
+                        case "3":
+                            fichero = "Drop.sql";
+                            break;
+                        case "4":
+                            fichero = "Insert.sql";
+                            break;
+                        case "5":
+                            fichero = "Update.sql";
+                            break;
+                    }
+                    Console.WriteLine("Estas seguro? Y/N");
+                    respuesta = Console.ReadLine();
+                    if (respuesta == "Y")
+                    {
+                        conector.EjecutarSql(conexion, fichero);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Desea realizar otra operacion?  Y/N");
+                        respuesta2 = Console.ReadLine();
+
+                    }
+                }
 
                 conexion.Close();
                 Console.WriteLine("Se cerró la conexión.");
@@ -58,7 +124,7 @@ namespace Conector
             {
                 Console.WriteLine(e.Message);
             }
-           
+
 
         }
     }
